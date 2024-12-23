@@ -1,0 +1,65 @@
+.car {
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    position: relative;
+    border-radius: 10px;
+
+    border: 1px solid black;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.car .window {
+    width: 60px;
+    height: 40px;
+    background-color: lightblue;
+    position: absolute;
+    top: 20px;
+    border-radius: 5px;
+}
+
+.car .window.left {
+    left: 20px;
+}
+
+.car .window.right {
+    right: 20px;
+}
+
+.car::before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -12px;
+    left: 10px;
+}
+
+.car::after {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -12px;
+    right: 10px;
+}
+
+.car_config {
+    margin: 5px;
+}
+
+.car_color_square {
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid black;
+}
